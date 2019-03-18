@@ -1,5 +1,5 @@
 PROJECT = f103_build_test
-BUILD_DIR = bin
+BUILD_DIR = obj
 
 SHARED_DIR = ../common-libs
 CFILES = test.c
@@ -17,3 +17,8 @@ OPENCM3_DIR=../libopencm3
 include $(OPENCM3_DIR)/mk/genlink-config.mk
 include ../rules.mk
 include $(OPENCM3_DIR)/mk/genlink-rules.mk
+
+.PHONY: project
+
+project: all $(PROJECT).lss
+	@echo "Build finished"
