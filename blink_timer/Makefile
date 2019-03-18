@@ -2,7 +2,8 @@ PROJECT = f103_blinky_timer
 BUILD_DIR = obj
 
 SHARED_DIR = ../common-libs
-CFILES = blink_timer.c delay_tim6.h
+CFILES = blink_timer.c
+CFILES += delay_tim6.c
 
 # Bluepill 64kB config
 DEVICE=stm32f103c8
