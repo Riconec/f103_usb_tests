@@ -4,6 +4,7 @@ BUILD_DIR = obj
 SHARED_DIR = ../common-libs
 CFILES = blink_timer.c
 CFILES += delay_tim6.c
+CFILES += bsp_f103.c
 
 # Bluepill 64kB config
 DEVICE=stm32f103c8
