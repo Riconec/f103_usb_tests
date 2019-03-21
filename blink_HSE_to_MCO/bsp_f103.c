@@ -52,7 +52,7 @@ void bsp_init_mco_pa8(void) {
     rcc_periph_clock_enable(RCC_GPIOA);
 
     /* Set A8 pin to alternate push-pull (MCO) configuration */
-    gpio_set_mode(GPIOC, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, GPIO8);
+    gpio_set_mode(GPIOA, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, GPIO8);
 
     /* Select MCO source */
     rcc_set_mco(RCC_CFGR_MCO_SYSCLK);
